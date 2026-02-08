@@ -4,7 +4,7 @@ Feel free to reuse this website structure and code as a template for your own pe
 
 - **Allowed**: HTML/CSS/JS structure, layout, components, and general page organization.
 - **Not included by default**: My personal content (text), PDFs, and especially **images**. Please replace these with your own assets.
-- **Images**: Do **not** reuse the pictures in this repo without asking for permission.
+- **Images**: Do **not** reuse the pictures in this repo.
 
 ## Credits
 
