@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Xplainer — Chantal Pellegrini</title>
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="../assets/data/images/chantal.jpg" onerror="this.onerror=null;this.src='../assets/data/images/avatar.jpg';" alt="Chantal Pellegrini" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="../index.html">Chantal Pellegrini</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:chantal.pellegrini@tum.de" class="email"><i class="bi bi-envelope"></i></a>
+          <a href="https://github.com/ChantalMP" class="github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/chantalpellegrini" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="https://scholar.google.com/citations?user=dmkOvGcAAAAJ&hl=en" class="scholar" aria-label="Google Scholar">
+            <svg style="margin-bottom:-10px;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 100 512 512" width="32px" height="32px" fill="#000000"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path fill="#ffffff" d="M213 111l-107 94h69c5 45 41 64 78 67-7 18-4 27 7 39-43 1-103 26-103 67 4 45 63 54 92 54 38 1 81-19 90-54 4-35-10-54-31-71-23-18-28-28-21-40 15-17 35-27 39-51 2-17-2-28-6-43l45-38-1 16c-3 2-5 6-5 9v103c2 13 22 11 23 0V160c0-3-2-7-5-8v-25l16-16zm58 141c-61 10-87-87-38-99 56-11 83 86 38 99zm-5 73c60 13 61 63 10 78-44 9-82-4-81-30 0-25 35-48 71-48z"></path></g></svg>
+          </a>
+        </div>
+      </div>
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="../index.html#about" class="nav-link scrollto"><i class="bi bi-person-vcard"></i> <span>About</span></a></li>
+          <li><a href="../index.html#publications" class="nav-link scrollto"><i class="bi bi-file-earmark"></i> <span>Publications</span></a></li>
+          <li><a href="../index.html#workexperience" class="nav-link scrollto"><i class="bi bi-building"></i> <span>Experience</span></a></li>
+          <li><a href="../index.html#education" class="nav-link scrollto"><i class="bi bi-mortarboard"></i> <span>Education</span></a></li>
+          <li><a href="../index.html#contact" class="nav-link scrollto"><i class="bi bi-envelope-at"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="inner-page">
+      <div class="container py-5">
+        <div class="mb-4">
+          <a href="../index.html#publications" class="text-decoration-none"><i class="bi bi-arrow-left"></i> Back to Publications</a>
+        </div>
+
+        <h1 class="mb-2">Xplainer: From X-Ray Observations to Explainable Zero-Shot Diagnosis</h1>
+        <p class="mb-1"><strong>Chantal Pellegrini</strong>, Matthias Keicher, Ege Özsoy, Petra Jiraskova, Rickmer Braren, Nassir Navab</p>
+        <p class="text-muted">MICCAI 2023 · arXiv:2303.13391</p>
+
+        <div class="links mb-4">
+          <a class="pdf-button" href="https://arxiv.org/pdf/2303.13391.pdf">arXiv</a>
+          <a class="pdf-button" href="https://link.springer.com/chapter/10.1007/978-3-031-43904-9_41">Publisher (Springer)</a>
+          <a class="pdf-button" href="https://huggingface.co/spaces/CAMP-ViL/Xplainer">Gradio Demo</a>
+          <a class="code-button" href="https://github.com/ChantalMP/Xplainer">Code (GitHub)</a>
+        </div>
+
+        <h2 class="h4">Abstract</h2>
+        <p>
+          We propose a new way of explainability for zero-shot diagnosis prediction in the clinical domain. Instead of directly predicting a diagnosis, we prompt the model to classify the existence of descriptive observations, which a radiologist would look for on an X-Ray scan, and use the descriptor probabilities to estimate the likelihood of a diagnosis, making our model explainable by design. For this we leverage BioVil, a pretrained CLIP model for X-rays and apply contrastive observation-based prompting. We evaluate Xplainer on two chest X-ray datasets, CheXpert and ChestX-ray14, and demonstrate its effectiveness in improving the performance and explainability of zero-shot diagnosis.
+        </p>
+
+        <div class="mb-4">
+          <img src="../assets/data/Xplainer/teaser.png" class="img-fluid rounded shadow-sm" alt="Xplainer overview" loading="lazy" decoding="async" onerror="this.style.display='none'">
+        </div>
+
+        <h2 class="h4">Citation</h2>
+        <pre class="bg-light p-3 rounded border"><code>@article{pellegrini2023xplainer,
+  title={Xplainer: From X-Ray Observations to Explainable Zero-Shot Diagnosis},
+  author={Pellegrini, Chantal and Keicher, Matthias and {\"O}zsoy, Ege and Jiraskova, Petra and Braren, Rickmer and Navab, Nassir},
+  journal={arXiv preprint arXiv:2303.13391},
+  year={2023}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script defer src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script defer src="../assets/js/main.js"></script>
+</body>
+</html>

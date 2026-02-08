@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Rewarding Doubt — Chantal Pellegrini</title>
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="../assets/data/images/chantal.jpg" onerror="this.onerror=null;this.src='../assets/data/images/avatar.jpg';" alt="Chantal Pellegrini" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="../index.html">Chantal Pellegrini</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:chantal.pellegrini@tum.de" class="email"><i class="bi bi-envelope"></i></a>
+          <a href="https://github.com/ChantalMP" class="github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/chantalpellegrini" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="https://scholar.google.com/citations?user=dmkOvGcAAAAJ&hl=en" class="scholar" aria-label="Google Scholar">
+            <svg style="margin-bottom:-10px;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 100 512 512" width="32px" height="32px" fill="#000000"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path fill="#ffffff" d="M213 111l-107 94h69c5 45 41 64 78 67-7 18-4 27 7 39-43 1-103 26-103 67 4 45 63 54 92 54 38 1 81-19 90-54 4-35-10-54-31-71-23-18-28-28-21-40 15-17 35-27 39-51 2-17-2-28-6-43l45-38-1 16c-3 2-5 6-5 9v103c2 13 22 11 23 0V160c0-3-2-7-5-8v-25l16-16zm58 141c-61 10-87-87-38-99 56-11 83 86 38 99zm-5 73c60 13 61 63 10 78-44 9-82-4-81-30 0-25 35-48 71-48z"></path></g></svg>
+          </a>
+        </div>
+      </div>
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="../index.html#about" class="nav-link scrollto"><i class="bi bi-person-vcard"></i> <span>About</span></a></li>
+          <li><a href="../index.html#publications" class="nav-link scrollto"><i class="bi bi-file-earmark"></i> <span>Publications</span></a></li>
+          <li><a href="../index.html#workexperience" class="nav-link scrollto"><i class="bi bi-building"></i> <span>Experience</span></a></li>
+          <li><a href="../index.html#education" class="nav-link scrollto"><i class="bi bi-mortarboard"></i> <span>Education</span></a></li>
+          <li><a href="../index.html#contact" class="nav-link scrollto"><i class="bi bi-envelope-at"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="inner-page">
+      <div class="container py-5">
+        <div class="mb-4">
+          <a href="../index.html#publications" class="text-decoration-none"><i class="bi bi-arrow-left"></i> Back to Publications</a>
+        </div>
+
+        <h1 class="mb-2">Rewarding Doubt: A Reinforcement Learning Approach to Confidence Calibration of Large Language Models</h1>
+        <p class="mb-1">David Bani-Harouni*, <strong>Chantal Pellegrini*</strong>, Paul Stangel, Ege Özsoy, Matthias Keicher, Nassir Navab <small>(* shared first authorship)</small></p>
+        <p class="text-muted">Accepted at ICLR 2026</p>
+
+        <div class="links mb-4">
+          <a class="pdf-button" href="https://arxiv.org/abs/2503.02623">Paper</a>
+          <a class="code-button" href="https://github.com/ChantalMP/RewardingDoubt">Code (GitHub)</a>
+        </div>
+
+        <h2 class="h4">Abstract</h2>
+        <p>
+          A safe and trustworthy use of Large Language Models (LLMs) requires an accurate expression of confidence in their answers. We propose a novel Reinforcement Learning approach that allows to directly fine-tune LLMs to express calibrated confidence estimates alongside their answers to factual questions. Our method optimizes a reward based on the logarithmic scoring rule, explicitly penalizing both over- and under-confidence. This encourages the model to align its confidence estimates with the actual predictive accuracy. The optimal policy under our reward design would result in perfectly calibrated confidence expressions. Unlike prior approaches that decouple confidence estimation from response generation, our method integrates confidence calibration seamlessly into the generative process of the LLM. Empirically, we demonstrate that models trained with our approach exhibit substantially improved calibration and generalize to unseen tasks without further fine-tuning, suggesting the emergence of general confidence awareness.
+        </p>
+
+        <div class="mb-4">
+          <img src="../assets/data/rewarding_doubt/teaser.png" class="img-fluid rounded shadow-sm" alt="Rewarding Doubt overview" loading="lazy" decoding="async" onerror="this.style.display='none'">
+        </div>
+
+        <h2 class="h4">Citation</h2>
+        <pre class="bg-light p-3 rounded border"><code>@inproceedings{bani-harouni2026rewarding,
+  title={Rewarding Doubt: A Reinforcement Learning Approach to Confidence Calibration of Large Language Models},
+  author={Bani-Harouni, David and Pellegrini, Chantal and Stangel, Paul and {\"O}zsoy, Ege and Keicher, Matthias and Navab, Nassir},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2026}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script defer src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script defer src="../assets/js/main.js"></script>
+</body>
+</html>

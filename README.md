@@ -8,5 +8,4 @@ Feel free to reuse this website structure and code as a template for your own pe
 
 ## Credits
 
-This website is based on (and adapted from) the template/code structure provided by:
-https://github.com/Felixduelmer/Felixduelmer.github.io
+This website is based on (and adapted from) the template/code structure provided by: https://github.com/Felixduelmer/Felixduelmer.github.io.
